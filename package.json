@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "publish": "npx chromatic --project-token=a7e226513ea9"
   },
   "dependencies": {
     "@next/font": "13.2.4",
@@ -32,6 +33,7 @@
     "@storybook/nextjs": "^7.0.0-rc.10",
     "@storybook/react": "^7.0.0-rc.10",
     "@storybook/testing-library": "^0.0.14-next.1",
+    "chromatic": "^6.17.2",
     "eslint-plugin-storybook": "^0.6.11",
     "storybook": "^7.0.0-rc.10"
   }
