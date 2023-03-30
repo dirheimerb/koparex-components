@@ -1,0 +1,85 @@
+.checkbox {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25em;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    cursor: pointer;
+  }
+  
+  .checkbox:hover {
+    border-color: #a0aec0;
+  }
+  
+  .checkbox.checked {
+    background-color: #38b2ac;
+    border-color: #38b2ac;
+  }
+  
+  .checkbox.checked:after {
+    content: "";
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 0.15em;
+    background-color: #fff;
+    margin: 0.2em 0 0 0.2em;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .list-item.TASK_ARCHIVED {
+    opacity: 0.5;
+  }
+  
+  .list-item.TASK_ARCHIVED .checkbox {
+    border-color: #4a5568;
+  }
+  
+  .list-item.TASK_ARCHIVED .checkbox.checked {
+    background-color: #4a5568;
+    border-color: #4a5568;
+  }
+  
+  .list-item.TASK_ARCHIVED .checkbox.checked:after {
+    background-color: #fff;
+  }
+  
+  .list-item.TASK_ARCHIVED .checkbox:hover {
+    border-color: #4a5568;
+  }
+  
+  .list-item.TASK_ARCHIVED .task-text {
+    color: #4a5568;
+    text-decoration: line-through;
+  }
+  
+  .list-item .task-text {
+    flex: 1;
+    font-size: 1.125em;
+    line-height: 1.5;
+    color: #2d3748;
+  }
+  
+  .list-item .task-text input[type="text"] {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.125
+}
+.list-item.TASK_ARCHIVED input[type="text"] {
+    color: #4a5568;
+     text-decoration: line-through;
+   }
